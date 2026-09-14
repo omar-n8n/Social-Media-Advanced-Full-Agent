@@ -22,17 +22,11 @@
 
 ## 📸 Workflow Preview
 
-<p align="center">
-  <img src="Screenshots/Generating-Flow.jpeg" alt="Generating Flow" width="100%">
-</p>
+![Generating Flow](./Screenshots/Generating-Flow.jpeg)
 
-<p align="center">
-  <img src="Screenshots/Regenerating-Flow.jpeg" alt="Regenerating Flow" width="100%">
-</p>
+![Regenerating Flow](./Screenshots/Regenerating-Flow.jpeg)
 
-<p align="center">
-  <img src="Screenshots/Publishing-Flow.jpeg" alt="Publishing Flow" width="100%">
-</p>
+![Publishing Flow](./Screenshots/Publishing-Flow.jpeg)
 
 ---
 
