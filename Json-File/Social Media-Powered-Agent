@@ -315,13 +315,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=YOUR_META_ACCESS_TOKEN",
+        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "access-token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD"
             }
           ]
         },
@@ -373,13 +373,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=YOUR_META_ACCESS_TOKEN",
+        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "access_token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD"
             }
           ]
         },
@@ -590,13 +590,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=YOUR_META_ACCESS_TOKEN",
+        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "access_token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD"
             }
           ]
         },
@@ -689,13 +689,13 @@
           "parameters": [
             {
               "name": "access_token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSYZB9CBeOeRVBsmUCx4hyINhIZBnt3ZBuZBM4ifPxlKSB6msdj7HhZAS6H4Kmv9CCZALZBcnzaOpjXJUZCf5GXgCsEUrR6V8ziWXZBKWCh0q9B2N1Y42CgyCHFbgF9RydBnCa4Ar18c9lk0mttLQa4jatXpSDaRYLQMFytAsZBzEZBz1MjP7sAUePvG29iRCoqN0AZDZD"
             }
           ]
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"message\": \"{{ $json['Post Content'] }}\",\n  \"access_token\": \"YOUR_META_ACCESS_TOKEN\"\n}",
+        "jsonBody": "={\n  \"message\": \"{{ $json['Post Content'] }}\",\n  \"access_token\": \"EAAO76gZCs150BSYZB9CBeOeRVBsmUCx4hyINhIZBnt3ZBuZBM4ifPxlKSB6msdj7HhZAS6H4Kmv9CCZALZBcnzaOpjXJUZCf5GXgCsEUrR6V8ziWXZBKWCh0q9B2N1Y42CgyCHFbgF9RydBnCa4Ar18c9lk0mttLQa4jatXpSDaRYLQMFytAsZBzEZBz1MjP7sAUePvG29iRCoqN0AZDZD\"\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -716,13 +716,13 @@
           "parameters": [
             {
               "name": "access_token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSYZB9CBeOeRVBsmUCx4hyINhIZBnt3ZBuZBM4ifPxlKSB6msdj7HhZAS6H4Kmv9CCZALZBcnzaOpjXJUZCf5GXgCsEUrR6V8ziWXZBKWCh0q9B2N1Y42CgyCHFbgF9RydBnCa4Ar18c9lk0mttLQa4jatXpSDaRYLQMFytAsZBzEZBz1MjP7sAUePvG29iRCoqN0AZDZD"
             }
           ]
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"message\": {{ JSON.stringify($json['Post Content']) }},\n  \"url\": \"{{ $json['Image Data'] }}\",\n  \"access_token\": \"YOUR_META_ACCESS_TOKEN\"\n}",
+        "jsonBody": "={\n  \"message\": {{ JSON.stringify($json['Post Content']) }},\n  \"url\": \"{{ $json['Image Data'] }}\",\n  \"access_token\": \"EAAO76gZCs150BSYZB9CBeOeRVBsmUCx4hyINhIZBnt3ZBuZBM4ifPxlKSB6msdj7HhZAS6H4Kmv9CCZALZBcnzaOpjXJUZCf5GXgCsEUrR6V8ziWXZBKWCh0q9B2N1Y42CgyCHFbgF9RydBnCa4Ar18c9lk0mttLQa4jatXpSDaRYLQMFytAsZBzEZBz1MjP7sAUePvG29iRCoqN0AZDZD\"\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -970,7 +970,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"caption\": \"{{ $json['Post Content'] }}\",\n  \"image_url\": \"{{ $json['Image Data'] }}\",\n  \"access_token\": \"YOUR_INSTAGRAM_ACCESS_TOKEN\"\n}",
+        "jsonBody": "={\n  \"caption\": \"{{ $json['Post Content'] }}\",\n  \"image_url\": \"{{ $json['Image Data'] }}\",\n  \"access_token\": \"IGAAewmcRY1oRBZAGJESjdiei1jWXhfdVJES0ZAOZADFoSmRLSldVQXpjdTFkUG9sX2Y2TTlHRXcwa1J5MlFoTUh2dFhGOWM2c2tzYTFrNTR4Y0ZAfTWpfbmYxam8wdWpZAUlNnOUtDYkM5M2xPamdnNVFEeTIxdXJtWU9CTy1GUVBxUQZDZD\"\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -992,7 +992,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"creation_id\": \"{{ $json.id }}\",\n  \"access_token\": \"YOUR_INSTAGRAM_ACCESS_TOKEN\"\n}",
+        "jsonBody": "={\n  \"creation_id\": \"{{ $json.id }}\",\n  \"access_token\": \"IGAAewmcRY1oRBZAGJESjdiei1jWXhfdVJES0ZAOZADFoSmRLSldVQXpjdTFkUG9sX2Y2TTlHRXcwa1J5MlFoTUh2dFhGOWM2c2tzYTFrNTR4Y0ZAfTWpfbmYxam8wdWpZAUlNnOUtDYkM5M2xPamdnNVFEeTIxdXJtWU9CTy1GUVBxUQZDZD\"\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -1013,7 +1013,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer YOUR_OPENAI_API_KEY"
+              "value": "Bearer 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"
             },
             {
               "name": "Content-Type",
@@ -1038,13 +1038,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://api.cloudinary.com/v1_1/YOUR_CLOUDINARY_CLOUD_NAME/image/upload",
+        "url": "=https://api.cloudinary.com/v1_1/kzqxkvyj/image/upload",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "upload_preset",
-              "value": "YOUR_CLOUDINARY_UPLOAD_PRESET"
+              "value": "Omar-n8n"
             }
           ]
         },
@@ -1331,7 +1331,7 @@
       "name": "Log Caption for Review",
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "U5fxxwdP38Rsj03I",
+          "id": "Google-Credentials",
           "name": "Google Sheets account"
         }
       }
@@ -1461,13 +1461,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=YOUR_META_ACCESS_TOKEN",
+        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "access_token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD"
             }
           ]
         },
@@ -1806,13 +1806,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=YOUR_META_ACCESS_TOKEN",
+        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "access_token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD"
             }
           ]
         },
@@ -2145,7 +2145,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer YOUR_OPENAI_API_KEY"
+              "value": "Bearer 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"
             },
             {
               "name": "Content-Type",
@@ -2170,13 +2170,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://api.cloudinary.com/v1_1/YOUR_CLOUDINARY_CLOUD_NAME/image/upload",
+        "url": "=https://api.cloudinary.com/v1_1/kzqxkvyj/image/upload",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "upload_preset",
-              "value": "YOUR_CLOUDINARY_UPLOAD_PRESET"
+              "value": "Omar-n8n"
             }
           ]
         },
@@ -2309,13 +2309,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=YOUR_META_ACCESS_TOKEN",
+        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "access_token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD"
             }
           ]
         },
@@ -2336,13 +2336,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=YOUR_META_ACCESS_TOKEN",
+        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "access_token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD"
             }
           ]
         },
@@ -2363,13 +2363,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=YOUR_META_ACCESS_TOKEN",
+        "url": "=https://graph.facebook.com/v25.0/{{ $('Messenger Webhook').item.json.body.entry[0].messaging[0].recipient.id }}/messages?access_token=EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "access_token",
-              "value": "YOUR_META_ACCESS_TOKEN"
+              "value": "EAAO76gZCs150BSMWnCGsy1FUP61kiTXGL4VyBKV5cpcs0VgSv6ZAtTHOFqz1BiBi4e0Vv8GnWFHMmJluTK9qUiO3CjKn4rnnqJw6zG2cZAtZAZCc0hDQSXSBdwHNXirZAMP2aUjn1W5q3A3vMz05964nazxpFRIkDBq4089WGEL3Sp54y87a7D9zMNtXPmgPZAevnlBhyqQggZDZD"
             }
           ]
         },
@@ -2478,7 +2478,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"author\": \"urn:li:person:z1Zsmwxe3w\",\n  \"commentary\": {{ JSON.stringify($json['Post Content']) }},\n  \"visibility\": \"PUBLIC\",\n  \"distribution\": {\n    \"feedDistribution\": \"MAIN_FEED\",\n    \"targetEntities\": [],\n    \"thirdPartyDistributionChannels\": []\n  },\n  \"lifecycleState\": \"PUBLISHED\",\n  \"isReshareDisabledByAuthor\": false\n}",
+        "jsonBody": "={\n  \"author\": \"urn:li:person:Person-Id\",\n  \"commentary\": {{ JSON.stringify($json['Post Content']) }},\n  \"visibility\": \"PUBLIC\",\n  \"distribution\": {\n    \"feedDistribution\": \"MAIN_FEED\",\n    \"targetEntities\": [],\n    \"thirdPartyDistributionChannels\": []\n  },\n  \"lifecycleState\": \"PUBLISHED\",\n  \"isReshareDisabledByAuthor\": false\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
