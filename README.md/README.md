@@ -1,116 +1,16 @@
-# 🗂️ Social-Media-Assistant-Agent
-
-### An Autonomous AI-Powered Content Creation & Publishing Workflow built with n8n
-
-<p align="center">
-
-[![n8n](https://img.shields.io/badge/Orchestrator-n8n-FF6D5A?style=for-the-badge\&logo=n8n\&logoColor=white)](https://n8n.io/)
-[![OpenAI](https://img.shields.io/badge/AI-OpenAI-412991?style=for-the-badge\&logo=openai\&logoColor=white)](https://openai.com/)
-[![Google Drive](https://img.shields.io/badge/Storage-Google_Drive-4285F4?style=for-the-badge\&logo=googledrive\&logoColor=white)](https://drive.google.com/)
-[![Meta](https://img.shields.io/badge/API-Meta_Graph_API-0866FF?style=for-the-badge\&logo=facebook\&logoColor=white)](https://developers.facebook.com/)
-[![LinkedIn](https://img.shields.io/badge/API-LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/)
-[![Status](https://img.shields.io/badge/Status-Production_Ready-22C55E?style=for-the-badge)
-
-</p>
-
-<p align="center">
-
-**Generate → Review → Regenerate → Approve → Publish**
-
-</p>
-
----
-
-## 📖 Overview
-
-**Social-Media-Assistant-Agent** is a modular AI-powered social media automation system built with **n8n**.
-
-It transforms simple **text prompts or voice notes** into ready-to-publish social media content while keeping the user in control of what gets generated and where it gets published.
-
-Unlike a fixed content-generation workflow, the system dynamically adapts to the user's request.
-
-### 🎯 What can the user generate?
-
-|    Content Type    | AI Caption | AI Image | Use Case            |
-| :----------------: | :--------: | :------: | ------------------- |
-|   ✍️ Caption Only  |      ✅     |     —    | Text-based posts    |
-| 🎨 Caption + Image |      ✅     |     ✅    | Visual social posts |
-
-After generation, content can be reviewed, regenerated, approved, and published to the selected platform.
-
-### 🌐 Supported Platforms
-
-| Platform     | Publishing | Status |
-| ------------ | :--------: | :----: |
-| 🔵 Facebook  |      ✅     | Active |
-| 📸 Instagram |      ✅     | Active |
-| 💼 LinkedIn  |      ✅     | Active |
-
----
-
-# ✨ Key Capabilities
-
-| Capability                       | Description                                                             |
-| -------------------------------- | ----------------------------------------------------------------------- |
-| 🎤 **Voice Input**               | Convert Messenger voice notes into text using OpenAI Whisper            |
-| 💬 **Text Input**                | Accept natural-language content requests                                |
-| 🧠 **AI Copywriting**            | Generate platform-ready captions with hooks, CTAs, hashtags, and emojis |
-| 🎨 **AI Image Generation**       | Create context-aware visuals when requested                             |
-| 🔄 **Regeneration**              | Generate a new version when the user rejects the content                |
-| 👤 **Human Approval**            | Keep a human in the loop before publishing                              |
-| ☁️ **Asset Management**          | Store generated assets in Google Drive                                  |
-| 📊 **Content Logging**           | Track generated content using Google Sheets                             |
-| 🚀 **Multi-Platform Publishing** | Publish approved content to Facebook, Instagram, or LinkedIn            |
-| 🧩 **Modular Architecture**      | Easily extend the workflow with additional capabilities                 |
-
----
-
-# 🏗️ System Architecture
-
-The system follows a modular pipeline where each stage is responsible for a specific part of the content lifecycle.
-
-| Layer            | Technology     | Responsibility                      |
-| ---------------- | -------------- | ----------------------------------- |
-| 🎤 Input         | Meta Messenger | Voice & text requests               |
-| 🗣️ Speech       | OpenAI Whisper | Voice-to-text transcription         |
-| 🧠 Intelligence  | OpenAI GPT-4o  | Content generation & transformation |
-| 🎨 Media         | OpenAI Images  | AI image generation                 |
-| ⚙️ Orchestration | n8n            | Workflow logic & automation         |
-| ☁️ Storage       | Google Drive   | Generated asset storage             |
-| 📊 Database      | Google Sheets  | Content & workflow tracking         |
-| 🔗 Publishing    | Meta Graph API | Facebook & Instagram publishing     |
-| 💼 Publishing    | LinkedIn API   | LinkedIn publishing                 |
-
----
-
-# ⚙️ Core Features
-
-## 🎤 1. Voice & Text Input
-
-Users can interact with the assistant using either:
-
-```text
-🎤 Voice Message
-       ↓
-OpenAI Whisper
-       ↓
-Text
-       ↓
-Content Pipeline
-```
-
-or directly send a text request.
-
-This creates a more natural interface for content creation without requiring users to manually interact with the underlying n8n workflow.
-
----
-
-## 🧠 2. Flexible Content Generation
-
-The workflow does not force every request through the same generation path.
-
-Instead, it determines what the user actually needs.
-
-### ✍️ Caption Only
-
-The system generates a c
+🗂️ Social-Media-Assistant-AgentAn Enterprise-Grade, Autonomous AI Multi-Platform Content Generation, Human-in-the-Loop Review & Direct Publishing Orchestrator Built with n8n.📖 System OverviewSocial-Media-Assistant-Agent is a modular, AI-powered social media automation system built with n8n. It transforms simple text prompts or voice notes into ready-to-publish social media content while keeping the user in full control of what gets generated and where it gets published.Unlike rigid content-generation workflows, this system dynamically adapts to the user's specific request using intelligent routing logic.🎯 Content Generation TypesContent TypeAI CaptionAI ImagePrimary Use Case✍️ Caption Only✅—Thought leadership, quick updates, text posts🎨 Caption + Image✅✅Visual social media posts, promotional contentAfter generation, content goes through an interactive Human-in-the-Loop approval stage where it can be reviewed, regenerated, or directly published to the selected platform.🌐 Supported PlatformsPlatformPublishing EngineStatus🔵 FacebookFacebook Graph API✅ Active📸 InstagramInstagram Graph API✅ Active💼 LinkedInLinkedIn REST API✅ Active✨ Key Capabilities🎤 Voice Input Processing: Converts Messenger voice notes into structured text using OpenAI Whisper.💬 Text Input Processing: Accepts natural-language content requests directly.🧠 AI Copywriting: Generates platform-ready captions complete with hooks, CTAs, hashtags, and emojis using GPT-4o.🎨 AI Image Generation: Creates context-aware visual assets using OpenAI DALL-E when requested.🔄 Regeneration Loop: Iteratively rewrites copy or generates new images if the user rejects the draft.👤 Human Approval: Keeps full control with the user via Messenger approval buttons before publishing.☁️ Asset Storage: Uploads assets to Cloudinary / Google Drive for high-speed delivery.📊 Content Logging: Tracks post metadata, statuses, and history in Google Sheets.🚀 Multi-Platform Publishing: Direct API-level publishing to Facebook, Instagram, or LinkedIn.🧩 Modular Architecture: Decoupled design allowing easy integration of new platforms or models.🏗️ System ArchitectureThe workflow follows a modular pipeline where each layer is responsible for a distinct phase of the content lifecycle:LayerTechnologyResponsibility🎤 InputMeta MessengerReceives voice & text requests via webhooks🗣️ SpeechOpenAI WhisperConverts audio notes into clean text transcriptions🧠 IntelligenceOpenAI GPT-4oCopywriting, prompt restructuring, & content decision-making🎨 MediaOpenAI DALL-EContext-aware visual asset synthesis⚙️ Orchestrationn8nCore workflow execution, branching logic, & routing☁️ StorageCloudinary / Google DriveCDN media asset hosting📊 DatabaseGoogle SheetsAudit logging, tracking post status, and historical records🔗 Publishing (Meta)Meta Graph APIFacebook Pages & Instagram Feed publishing💼 Publishing (LinkedIn)LinkedIn REST APIBinary media upload & feed post dispatching⚙️ Core Features Detail🎤 1. Voice & Text InputUsers interact naturally with the assistant via Meta Messenger:Voice Message ──► OpenAI Whisper ──► Clean Text ──► Request PipelineText Message ────────────────────────────────────► Request Pipeline🧠 2. Flexible Content Generation LogicThe workflow routes execution dynamically based on request requirements:Caption Only: Generates copy and immediately skips visual pipeline, saving execution time and API costs.Caption + Image: Triggers visual synthesis, stores the media asset, and constructs an image-compatible payload.✍️ 3. AI Copywriting AnatomyGenerated social posts follow proven engagement frameworks:🎯 Hook: Grabs immediate attention in the feed.📖 Body / Story: Delivers core message value clearly.📣 CTA: Directs audience toward intended action.#️⃣ Hashtags: Enhances content discoverability.😊 Formatting: Uses emojis and line breaks optimized for modern feeds.👤 Human-in-the-Loop ReviewAutomated generation does not mean unsupervised publishing. Every post enters a review loop:AI Generated Content ──► User Review──► Approve ──► Publishing Pipeline──► Regenerate ──► New Version FlowActionResult✅ ApproveDispatches payload directly to target platform API🔄 RegenerateFetches historical context and generates a revised draft🔄 End-to-End Workflow PipelineUser Request (Voice / Text via Messenger Webhook)Request Router (Determines Content Type)Branch A: Caption OnlyBranch B: Caption + Image (Triggers AI Image Generation & Cloud Upload)Google Sheets Logging (Saves initial state)User Review (Interactive Messenger Buttons)Choice A: Regenerate ──► Route back to AI Agent for fresh copy/imageChoice B: Approve ──► Send to Platform RouterPlatform Router & Direct PublishingRoute A: Facebook PagesRoute B: Instagram FeedRoute C: LinkedIn Network🖼️ Workflow Screenshots⚙️ Generating FlowProcesses initial incoming input, determines content type, generates text copy, and optionally synthesizes image assets.🔄 Regenerating FlowFetches rejected row metadata, applies user feedback or alternative strategy, and produces refined copy/visuals.🚀 Publishing FlowDispatches approved payloads to platform APIs (handling media upload containers for Instagram & binary uploads for LinkedIn).📂 Repository StructurePlaintextSocial-Media-Assistant-Agent
+│
+├── README.md
+│
+├── workflow/
+│   └── Social-Media-Assistant-Agent.json
+│
+├── Screenshots/
+│   ├── Generating-Flow.png
+│   ├── Regenerating-Flow.png
+│   └── Publishing-Flow.png
+│
+└── assets/
+🚀 Installation & Deployment1. Clone the RepositoryBashgit clone https://github.com/omar-n8n/Social-Media-Assistant-Agent.git
+cd Social-Media-Assistant-Agent
+2. Import Workflow into n8nOpen your n8n instance.Go to Workflows → Import from File.Select workflow/Social-Media-Assistant-Agent.json.3. Credentials ConfigurationSet up the following API connections in n8n credentials:OpenAI API Key: Used for Whisper, GPT-4o, and DALL-E.Google Sheets OAuth2: Content database and state tracking.Cloud Storage: Cloudinary API Key / Google Drive Service Account.Meta Webhook & Graph API Access Tokens: Facebook Pages & Instagram Business Accounts.LinkedIn OAuth2 / Developer Credentials: LinkedIn API publishing.👨‍💻 AuthorOmar Ali OsmanAI Automation DeveloperGitHub: github.com/omar-n8nLinkedIn: linkedin.com/in/omar-ali-007000379⭐ Star this repository if you find it helpful!Built with ❤️ using n8n, OpenAI, and Meta APIs
