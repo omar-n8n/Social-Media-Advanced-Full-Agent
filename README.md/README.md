@@ -1,337 +1,34 @@
 # 🗂️ Social-Media-Assistant-Agent
 
-### An Autonomous AI-Powered Content Creation & Publishing Workflow built with n8n
+### An Autonomous AI-Powered Content Creation & Publishing System built with n8n
 
 <p align="center">
 
 [![n8n](https://img.shields.io/badge/Orchestrator-n8n-FF6D5A?style=for-the-badge\&logo=n8n\&logoColor=white)](https://n8n.io/)
 [![OpenAI](https://img.shields.io/badge/AI-OpenAI-412991?style=for-the-badge\&logo=openai\&logoColor=white)](https://openai.com/)
-[![Google Drive](https://img.shields.io/badge/Storage-Google_Drive-4285F4?style=for-the-badge\&logo=googledrive\&logoColor=white)](https://drive.google.com/)
-[![Meta](https://img.shields.io/badge/API-Meta_Graph_API-0866FF?style=for-the-badge\&logo=facebook\&logoColor=white)](https://developers.facebook.com/)
-[![LinkedIn](https://img.shields.io/badge/API-LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/)
+[![Google Drive](https://img.shields.io/badge/Storage-Google%20Drive-4285F4?style=for-the-badge\&logo=googledrive\&logoColor=white)](https://drive.google.com/)
+[![Cloudinary](https://img.shields.io/badge/Media-Cloudinary-3448C5?style=for-the-badge\&logo=cloudinary\&logoColor=white)](https://cloudinary.com/)
+[![Meta](https://img.shields.io/badge/Publishing-Meta-1877F2?style=for-the-badge\&logo=meta\&logoColor=white)](https://developers.facebook.com/)
+[![LinkedIn](https://img.shields.io/badge/Publishing-LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/)
 [![Status](https://img.shields.io/badge/Status-Production_Ready-22C55E?style=for-the-badge)](https://github.com/omar-n8n/Social-Media-Assistant-Agent)
 
 </p>
 
 <p align="center">
-
-**Generate → Review → Regenerate → Approve → Publish**
-
+  <b>Generate → Review → Regenerate → Approve → Publish</b>
 </p>
 
 ---
 
-## 📖 Overview
-
-**Social-Media-Assistant-Agent** is a modular AI-powered social media automation system built with **n8n**.
-
-It transforms simple **text prompts or voice notes** into ready-to-publish social media content while keeping the user in control of what gets generated and where it gets published.
-
-Unlike a fixed content-generation workflow, the system dynamically adapts to the user's request.
-
-### 🎯 Content Generation
-
-| Content Type       | AI Caption | AI Image | Best For                    |
-| ------------------ | :--------: | :------: | --------------------------- |
-| ✍️ Caption Only    |      ✅     |     —    | Text-based social posts     |
-| 🎨 Caption + Image |      ✅     |     ✅    | Visual social media content |
-
-After generation, content can be **reviewed, regenerated, approved, and published** to the selected platform.
-
-### 🌐 Supported Platforms
-
-| Platform     | Publishing | Status |
-| ------------ | :--------: | ------ |
-| 🔵 Facebook  |      ✅     | Active |
-| 📸 Instagram |      ✅     | Active |
-| 💼 LinkedIn  |      ✅     | Active |
-
----
-
-# ✨ Key Capabilities
-
-| Capability                       | Description                                                             |
-| -------------------------------- | ----------------------------------------------------------------------- |
-| 🎤 **Voice Input**               | Convert Messenger voice notes into text using OpenAI Whisper            |
-| 💬 **Text Input**                | Accept natural-language content requests                                |
-| 🧠 **AI Copywriting**            | Generate platform-ready captions with hooks, CTAs, hashtags, and emojis |
-| 🎨 **AI Image Generation**       | Create context-aware visuals when requested                             |
-| 🔄 **Content Regeneration**      | Generate a new version when the user rejects the content                |
-| 👤 **Human Approval**            | Keep a human in the loop before publishing                              |
-| ☁️ **Asset Management**          | Store generated assets in Google Drive                                  |
-| 📊 **Content Logging**           | Track generated content using Google Sheets                             |
-| 🚀 **Multi-Platform Publishing** | Publish approved content to Facebook, Instagram, or LinkedIn            |
-| 🧩 **Modular Architecture**      | Extend the workflow with additional AI and social media capabilities    |
-
----
-
-# 🏗️ System Architecture
-
-The system follows a modular pipeline where each stage is responsible for a specific part of the content lifecycle.
-
-| Layer            | Technology     | Responsibility                        |
-| ---------------- | -------------- | ------------------------------------- |
-| 🎤 Input         | Meta Messenger | Voice and text requests               |
-| 🗣️ Speech       | OpenAI Whisper | Voice-to-text transcription           |
-| 🧠 Intelligence  | OpenAI GPT-4o  | Content generation and transformation |
-| 🎨 Media         | OpenAI Images  | AI image generation                   |
-| ⚙️ Orchestration | n8n            | Workflow logic and automation         |
-| ☁️ Storage       | Google Drive   | Generated asset storage               |
-| 📊 Database      | Google Sheets  | Content and workflow tracking         |
-| 🔗 Publishing    | Meta Graph API | Facebook and Instagram publishing     |
-| 💼 Publishing    | LinkedIn API   | LinkedIn publishing                   |
-
----
-
-# ⚙️ Core Features
-
-## 🎤 1. Voice & Text Input
-
-Users can interact with the assistant using either:
-
-```text
-🎤 Voice Message
-       │
-       ▼
-OpenAI Whisper
-       │
-       ▼
-     Text
-       │
-       ▼
-Content Pipeline
-```
-
-Users can also send a text request directly through Messenger.
-
-This provides a natural interface for content creation without requiring users to interact directly with the underlying n8n workflow.
-
----
-
-## 🧠 2. Flexible Content Generation
-
-The workflow does not force every request through the same generation path.
-
-Instead, it dynamically determines what the user needs.
-
-### ✍️ Caption Only
-
-The system generates a complete social media caption without generating an image.
-
-### 🎨 Caption + Image
-
-The system generates:
-
-1. AI-written caption
-2. AI-generated image
-3. Stored image asset
-4. Publishing-ready content
-
-This flexible approach avoids unnecessary image generation and gives the user greater control over the final content.
-
----
-
-## ✍️ 3. AI Copywriting
-
-The AI generates social media copy based on the user's request and the selected content workflow.
-
-| Element               | Purpose                                |
-| --------------------- | -------------------------------------- |
-| 🎯 **Hook**           | Capture attention                      |
-| 📖 **Storytelling**   | Structure the message                  |
-| 📣 **Call-to-Action** | Encourage engagement                   |
-| #️⃣ **Hashtags**      | Improve discoverability                |
-| 😊 **Emojis**         | Add visual structure where appropriate |
-| 📱 **Formatting**     | Produce social-ready content           |
-
----
-
-## 🎨 4. AI Image Generation
-
-When an image is requested, the workflow automatically generates a context-aware visual based on the content.
-
-```text
-Content Request
-      │
-      ▼
-AI Caption Generation
-      │
-      ▼
-Image Context
-      │
-      ▼
-AI Image Generation
-      │
-      ▼
-Google Drive
-      │
-      ▼
-Publishing Pipeline
-```
-
----
-
-## ☁️ 5. Automated Asset Management
-
-Generated images are automatically uploaded to **Google Drive**.
-
-The workflow stores the relevant asset information so it can be used by the publishing and tracking stages.
-
-| Asset           | Storage       |
-| --------------- | ------------- |
-| Generated Image | Google Drive  |
-| Image URL       | Google Sheets |
-| Caption         | Google Sheets |
-| Content Status  | Google Sheets |
-| Timestamp       | Google Sheets |
-
----
-
-## 📊 6. Content Tracking
-
-Every generated content item can be logged in **Google Sheets**.
-
-This provides a centralized record of the content lifecycle.
-
-| Data         | Purpose                      |
-| ------------ | ---------------------------- |
-| Caption      | Store generated copy         |
-| Image URL    | Reference generated media    |
-| Platform     | Track publishing destination |
-| Content Type | Caption / Caption + Image    |
-| Status       | Track workflow state         |
-| Timestamp    | Track creation activity      |
-
----
-
-# 👤 Human-in-the-Loop Approval
-
-AI generation does not automatically mean automatic publishing.
-
-The system introduces a human approval layer that gives the user control over the final content.
-
-### Approval Flow
-
-```text
-AI Generated Content
-        │
-        ▼
-    User Review
-        │
-   ┌────┴────┐
-   │         │
-Approve   Regenerate
-   │         │
-   ▼         ▼
-Publish   New Version
-```
-
-### Available Actions
-
-| Action            | Result                                         |
-| ----------------- | ---------------------------------------------- |
-| ✅ **Approve**     | Sends the content to the publishing pipeline   |
-| 🔄 **Regenerate** | Creates a new version of the requested content |
-
-This creates a balance between **automation, flexibility, and human control**.
-
----
-
-# 🚀 Multi-Platform Publishing
-
-Once content is approved, the workflow routes it to the selected platform.
-
-| Platform     | API                 | Publishing | Status |
-| ------------ | ------------------- | :--------: | ------ |
-| 🔵 Facebook  | Facebook Graph API  |      ✅     | Active |
-| 📸 Instagram | Instagram Graph API |      ✅     | Active |
-| 💼 LinkedIn  | LinkedIn API        |      ✅     | Active |
-
-The publishing layer is separated from the content-generation layer, making future platform integrations easier to add.
-
----
-
-# 🔄 End-to-End Workflow
-
-```text
-                         USER
-                          │
-                    Voice / Text
-                          │
-                          ▼
-                  Messenger Webhook
-                          │
-                          ▼
-                   Request Router
-                          │
-                          ▼
-                ┌─────────────────┐
-                │ Content Request │
-                └────────┬────────┘
-                         │
-                         ▼
-                 Select Content Type
-                         │
-                ┌────────┴────────┐
-                │                 │
-                ▼                 ▼
-          Caption Only      Caption + Image
-                │                 │
-                │                 ▼
-                │          AI Image Generation
-                │                 │
-                └────────┬────────┘
-                         ▼
-                   Google Drive
-                         │
-                         ▼
-                   Google Sheets
-                         │
-                         ▼
-                    User Review
-                         │
-                  ┌──────┴──────┐
-                  │             │
-               Approve       Regenerate
-                  │             │
-                  │             └──────► New Version
-                  │
-                  ▼
-              Platform Router
-                  │
-           ┌──────┼──────┐
-           │      │      │
-           ▼      ▼      ▼
-       Facebook Instagram LinkedIn
-```
-
----
-
-# 🖼️ Workflow Screenshots
-
-## ⚙️ Generating Flow
-
-The generation pipeline processes the user's request, determines the required content type, generates the caption, and optionally creates an AI-generated image.
+## 📸 Workflow Preview
 
 <p align="center">
   <img src="Screenshots/Generating-Flow.jpeg" alt="Generating Flow" width="100%">
 </p>
 
----
-
-## 🔄 Regenerating Flow
-
-When the user requests a new version, the regeneration flow creates updated content while preserving the existing workflow state.
-
 <p align="center">
   <img src="Screenshots/Regenerating-Flow.jpeg" alt="Regenerating Flow" width="100%">
 </p>
-
----
-
-## 🚀 Publishing Flow
-
-Once the user approves the generated content, the publishing flow routes it to the selected social media platform.
 
 <p align="center">
   <img src="Screenshots/Publishing-Flow.jpeg" alt="Publishing Flow" width="100%">
@@ -339,56 +36,281 @@ Once the user approves the generated content, the publishing flow routes it to t
 
 ---
 
+## 🚀 Overview
+
+**Social-Media-Assistant-Agent** is a modular AI-powered social media automation system built with **n8n, OpenAI, Cloudinary, Google Drive, Google Sheets, Meta, and LinkedIn APIs**.
+
+The system transforms a simple **text prompt or voice note** into ready-to-publish social media content through an automated workflow that combines:
+
+* AI content generation
+* AI image generation
+* Media management with Cloudinary
+* Human approval
+* Content regeneration
+* Multi-platform publishing
+* Content tracking
+
+Instead of manually writing, designing, downloading, uploading, and publishing every post, the workflow handles the entire process through one automated pipeline.
+
+---
+
+## ✨ What It Can Generate
+
+The system supports flexible content generation depending on the user's needs.
+
+| Content Type    | AI Caption | AI Image | Best For                  |
+| --------------- | ---------: | -------: | ------------------------- |
+| Caption Only    |          ✅ |        ❌ | Text-based posts          |
+| Caption + Image |          ✅ |        ✅ | Visual social media posts |
+
+This makes the workflow flexible instead of forcing every request into the same content format.
+
+---
+
+## 🌐 Supported Publishing Platforms
+
+| Platform  | Status    | Publishing |
+| --------- | --------- | ---------- |
+| Facebook  | 🟢 Active | Automated  |
+| Instagram | 🟢 Active | Automated  |
+| LinkedIn  | 🟢 Active | Automated  |
+
+The publishing layer is modular, allowing additional platforms to be integrated without redesigning the entire workflow.
+
+---
+
+# 🧠 Core Capabilities
+
+| Capability                   | Description                                               |
+| ---------------------------- | --------------------------------------------------------- |
+| 🎙️ Voice Input              | Convert voice instructions into text using OpenAI Whisper |
+| 💬 Text Input                | Accept direct content instructions                        |
+| ✍️ AI Copywriting            | Generate platform-ready captions using OpenAI             |
+| 🖼️ AI Image Generation      | Generate visual assets when requested                     |
+| 🔄 Content Regeneration      | Regenerate content when the user is not satisfied         |
+| ☁️ Cloud Media Management    | Upload and manage generated media through Cloudinary      |
+| 📁 File Storage              | Store workflow assets through Google Drive                |
+| 📊 Content Database          | Track generated and published content using Google Sheets |
+| 👤 Human Approval            | Keep a human in control before publishing                 |
+| 🌐 Multi-Platform Publishing | Publish to Facebook, Instagram, and LinkedIn              |
+| ⚙️ Workflow Orchestration    | Coordinate the complete process through n8n               |
+
+---
+
+# 🏗️ System Architecture
+
+The workflow follows a modular event-driven architecture:
+
+| Layer            | Technology     | Responsibility                           |
+| ---------------- | -------------- | ---------------------------------------- |
+| Input            | Meta Messenger | Receive text and voice requests          |
+| Speech-to-Text   | OpenAI Whisper | Convert voice into text                  |
+| AI Intelligence  | OpenAI GPT     | Understand requests and generate content |
+| Image Generation | OpenAI Images  | Create visual content                    |
+| Media Management | Cloudinary     | Upload, host, and manage generated media |
+| File Storage     | Google Drive   | Store workflow assets                    |
+| Database         | Google Sheets  | Track content and publishing status      |
+| Orchestration    | n8n            | Connect and automate all components      |
+| Publishing       | Meta Graph API | Facebook & Instagram publishing          |
+| Publishing       | LinkedIn API   | LinkedIn publishing                      |
+
+---
+
+# 🔥 Key Features
+
+## 🎙️ 1. Voice & Text Content Requests
+
+Users can provide either:
+
+* A normal text instruction
+* A voice message
+
+Voice requests are transcribed using **OpenAI Whisper** before being passed into the AI content pipeline.
+
+Example:
+
+> "Create a professional post about AI automation for businesses."
+
+The workflow automatically processes the request and prepares the required content.
+
+---
+
+## ✍️ 2. AI-Powered Copywriting
+
+OpenAI generates social-media-ready captions based on the user's instructions.
+
+The generation layer can adapt the content according to:
+
+* Topic
+* Tone
+* Platform
+* Content requirements
+* User instructions
+
+---
+
+## 🖼️ 3. AI Image Generation
+
+When the user requests visual content, the workflow generates an AI image alongside the caption.
+
+The system can therefore handle:
+
+**Caption only**
+
+or
+
+**Caption + AI-generated image**
+
+without requiring separate workflows.
+
+---
+
+## ☁️ 4. Cloudinary Media Pipeline
+
+**Cloudinary** is a core part of the media-management layer.
+
+Generated images are uploaded to Cloudinary so they can be:
+
+* Hosted remotely
+* Accessed through stable URLs
+* Passed between workflow steps
+* Used by publishing APIs
+* Managed independently from the local workflow environment
+
+### Media Flow
+
+```text
+AI Image Generation
+        ↓
+   Cloudinary
+        ↓
+   Hosted Media URL
+        ↓
+Publishing Layer
+        ↓
+Facebook / Instagram / LinkedIn
+```
+
+This makes the workflow much more suitable for production environments where publishing platforms need accessible media URLs.
+
+---
+
+# 👤 Human-in-the-Loop Approval
+
+The system does not blindly publish every generated post.
+
+The user remains in control of the final content.
+
+```text
+        AI Generates Content
+                 ↓
+          User Reviews
+             ↙       ↘
+        Regenerate    Approve
+             ↓          ↓
+        New Content   Publish
+```
+
+The user can:
+
+| Action          | Result                          |
+| --------------- | ------------------------------- |
+| ✅ Approve       | Continue to publishing          |
+| 🔄 Regenerate   | Generate a new version          |
+| ❌ Reject / Stop | End the current publishing flow |
+
+This creates a practical balance between **AI automation and human control**.
+
+---
+
+# 🔄 End-to-End Workflow
+
+```text
+┌───────────────────────┐
+│   Text / Voice Input  │
+└───────────┬───────────┘
+            ↓
+┌───────────────────────┐
+│   Speech-to-Text      │
+│     if required       │
+└───────────┬───────────┘
+            ↓
+┌───────────────────────┐
+│     AI Processing     │
+│       OpenAI          │
+└───────────┬───────────┘
+            ↓
+     ┌──────┴──────┐
+     ↓             ↓
+ Caption Only   Caption + Image
+     │             │
+     │       ┌─────▼─────┐
+     │       │ AI Image  │
+     │       └─────┬─────┘
+     │             ↓
+     │       ┌───────────┐
+     │       │Cloudinary │
+     │       └─────┬─────┘
+     │             │
+     └──────┬──────┘
+            ↓
+      Human Review
+        ↙       ↘
+   Regenerate   Approve
+        ↓          ↓
+      AI Loop   Publishing
+                   ↓
+        ┌──────────┼──────────┐
+        ↓          ↓          ↓
+     Facebook   Instagram  LinkedIn
+```
+
+---
+
 # 📊 Content Lifecycle
 
-| Stage  | Input                 | Processing            | Output               |
-| ------ | --------------------- | --------------------- | -------------------- |
-| **01** | 🎤 Voice / Text       | Request parsing       | Structured request   |
-| **02** | 🧠 Request            | AI content generation | Caption              |
-| **03** | 🎨 Image Request      | Image generation      | Visual asset         |
-| **04** | ☁️ Asset              | Google Drive upload   | Stored asset         |
-| **05** | 📊 Content            | Google Sheets logging | Tracked record       |
-| **06** | 👤 Generated Content  | Human review          | Approve / Regenerate |
-| **07** | ✅ Approved Content    | Platform routing      | Publishing request   |
-| **08** | 🚀 Publishing Request | Social API            | Published content    |
+| Stage          | System Action                          |
+| -------------- | -------------------------------------- |
+| 1️⃣ Input      | Receive text or voice request          |
+| 2️⃣ Understand | Process user instructions with AI      |
+| 3️⃣ Generate   | Create caption and optional image      |
+| 4️⃣ Store      | Manage files and media                 |
+| 5️⃣ Review     | Send content for human approval        |
+| 6️⃣ Regenerate | Create a new version if requested      |
+| 7️⃣ Approve    | Confirm final content                  |
+| 8️⃣ Publish    | Publish to selected platforms          |
+| 9️⃣ Track      | Log content and publishing information |
 
 ---
 
-# 🔌 Integrations
+# 🔗 Integrations
 
-| Integration                    | Purpose                | Status |
-| ------------------------------ | ---------------------- | :----: |
-| ⚙️ **n8n**                     | Workflow orchestration |    ✅   |
-| 🤖 **OpenAI GPT-4o**           | AI copywriting         |    ✅   |
-| 🎤 **OpenAI Whisper**          | Speech-to-text         |    ✅   |
-| 🎨 **OpenAI Images**           | AI image generation    |    ✅   |
-| ☁️ **Google Drive API**        | Asset storage          |    ✅   |
-| 📊 **Google Sheets API**       | Content database       |    ✅   |
-| 💬 **Meta Messenger Webhooks** | User interaction       |    ✅   |
-| 🔵 **Facebook Graph API**      | Facebook publishing    |    ✅   |
-| 📸 **Instagram Graph API**     | Instagram publishing   |    ✅   |
-| 💼 **LinkedIn API**            | LinkedIn publishing    |    ✅   |
+| Service            | Role                                      | Status    |
+| ------------------ | ----------------------------------------- | --------- |
+| **n8n**            | Workflow orchestration                    | 🟢 Active |
+| **OpenAI**         | AI processing, Whisper & image generation | 🟢 Active |
+| **Cloudinary**     | Media hosting & management                | 🟢 Active |
+| **Google Drive**   | File storage                              | 🟢 Active |
+| **Google Sheets**  | Content tracking & database               | 🟢 Active |
+| **Meta Graph API** | Facebook & Instagram publishing           | 🟢 Active |
+| **LinkedIn API**   | LinkedIn publishing                       | 🟢 Active |
 
 ---
 
-# 🎯 Use Cases
+# 💼 Practical Use Cases
 
-The system can be adapted for a wide range of content automation scenarios.
-
-| Use Case                       | Example                                 |
-| ------------------------------ | --------------------------------------- |
-| 👤 **Personal Brands**         | Automated personal content creation     |
-| 📣 **Marketing Agencies**      | Content generation for multiple clients |
-| 🏢 **Small Businesses**        | Social media content automation         |
-| 🛍️ **E-commerce**             | Product-focused social posts            |
-| 🎙️ **Podcasts**               | Content repurposing                     |
-| 🎥 **Content Creators**        | Faster content production               |
-| 💼 **Professional Brands**     | LinkedIn content automation             |
-| 📱 **Social Media Management** | Multi-platform publishing               |
+| Use Case                  | Example                                                    |
+| ------------------------- | ---------------------------------------------------------- |
+| 🏢 Business Content       | Generate and publish company posts                         |
+| 📣 Marketing Teams        | Automate repetitive content production                     |
+| 👤 Personal Brands        | Maintain consistent social media activity                  |
+| 🚀 Startups               | Reduce manual content operations                           |
+| 📱 Social Media Managers  | Generate, review, and publish from one workflow            |
+| 🤖 AI Automation Services | Use as a foundation for client-specific automation systems |
 
 ---
 
-# 📂 Repository Structure
+# 📁 Repository Structure
 
 ```text
 Social-Media-Assistant-Agent
@@ -408,26 +330,15 @@ Social-Media-Assistant-Agent
 
 ---
 
-# 🚀 Installation
+# ⚙️ Installation
 
-## 1. Clone Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/omar-n8n/Social-Media-Assistant-Agent.git
 ```
 
----
-
-## 2. Import Workflow
-
-Open your **n8n** instance.
-
-Navigate to:
-
-```text
-Workflows
-→ Import from File
-```
+### 2. Open n8n
 
 Import:
 
@@ -435,198 +346,178 @@ Import:
 workflow/Social-Media-Assistant-Agent.json
 ```
 
----
+### 3. Configure Credentials
 
-## 3. Configure Credentials
+Connect the required services:
 
-Configure the required credentials:
+* OpenAI
+* Cloudinary
+* Google Drive
+* Google Sheets
+* Meta
+* LinkedIn
 
-| Credential                               | Required For              |
-| ---------------------------------------- | ------------------------- |
-| **OpenAI API**                           | AI generation and Whisper |
-| **Google Drive OAuth**                   | Asset storage             |
-| **Google Sheets OAuth**                  | Content tracking          |
-| **Meta Developer Credentials**           | Facebook / Instagram      |
-| **Facebook Page Access Token**           | Facebook publishing       |
-| **Instagram Business / Creator Account** | Instagram publishing      |
-| **LinkedIn Developer App**               | LinkedIn publishing       |
+### 4. Configure Environment
 
----
+Update the workflow with your own credentials, IDs, pages, accounts, and required configuration.
 
-## 4. Activate Workflow
+### 5. Activate
 
-Enable the workflow and start sending content requests through Messenger.
+Once credentials and platform settings are configured, activate the workflow and start sending content requests.
 
 ---
 
-# 📦 Requirements
+# 🔐 Requirements
 
-| Requirement                    | Purpose                          |
-| ------------------------------ | -------------------------------- |
-| **n8n**                        | Workflow execution               |
-| **OpenAI API**                 | AI capabilities                  |
-| **Google Cloud Project**       | Google integrations              |
-| **Google Drive API**           | Asset storage                    |
-| **Google Sheets API**          | Content tracking                 |
-| **Meta Developer Account**     | Facebook / Instagram integration |
-| **LinkedIn Developer Account** | LinkedIn publishing              |
+| Requirement              | Purpose                         |
+| ------------------------ | ------------------------------- |
+| n8n                      | Workflow automation             |
+| OpenAI API               | AI processing and generation    |
+| Cloudinary Account       | Media hosting and delivery      |
+| Google Drive             | File storage                    |
+| Google Sheets            | Content database                |
+| Meta Developer Setup     | Facebook & Instagram publishing |
+| LinkedIn Developer Setup | LinkedIn publishing             |
 
 ---
 
 # 🗺️ Roadmap
 
-### 🎨 Content Creation
+## Content Creation
 
-* [x] Speech-to-Text
-* [x] AI Copywriting
-* [x] Flexible Content Types
-* [x] AI Image Generation
-* [ ] AI Video Generation
+| Feature                | Status      |
+| ---------------------- | ----------- |
+| Speech-to-Text         | ✅ Completed |
+| AI Copywriting         | ✅ Completed |
+| Flexible Content Types | ✅ Completed |
+| AI Image Generation    | ✅ Completed |
+| AI Video Generation    | 🔜 Planned  |
 
-### 🚀 Publishing
+## Publishing
 
-* [x] Facebook Publishing
-* [x] Instagram Publishing
-* [x] LinkedIn Publishing
-* [ ] Scheduled Posts
-* [ ] Advanced Multi-Platform Publishing
+| Feature                            | Status      |
+| ---------------------------------- | ----------- |
+| Facebook Publishing                | ✅ Completed |
+| Instagram Publishing               | ✅ Completed |
+| LinkedIn Publishing                | ✅ Completed |
+| Scheduled Posts                    | 🔜 Planned  |
+| Advanced Multi-Platform Publishing | 🔜 Planned  |
 
-### 💬 Engagement
+## Engagement
 
-* [ ] Automated Comment Replies
-* [ ] AI-Powered Engagement Assistant
-* [ ] Comment Sentiment Analysis
+| Feature                    | Status     |
+| -------------------------- | ---------- |
+| Automated Comment Replies  | 🔜 Planned |
+| AI Engagement Assistant    | 🔜 Planned |
+| Comment Sentiment Analysis | 🔜 Planned |
 
-### 📊 Analytics
+## Analytics
 
-* [ ] Analytics Dashboard
-* [ ] Post Performance Tracking
-* [ ] AI Performance Insights
+| Feature                   | Status     |
+| ------------------------- | ---------- |
+| Analytics Dashboard       | 🔜 Planned |
+| Post Performance Tracking | 🔜 Planned |
+| AI Performance Insights   | 🔜 Planned |
 
 ---
 
-# 💡 Tech Stack
+# 🧰 Tech Stack
 
-| Technology             | Role                            |
-| ---------------------- | ------------------------------- |
-| **n8n**                | Workflow orchestration          |
-| **OpenAI GPT-4o**      | AI content generation           |
-| **OpenAI Whisper**     | Speech-to-text                  |
-| **OpenAI Images**      | AI image generation             |
-| **Google Drive**       | Asset storage                   |
-| **Google Sheets**      | Content database                |
-| **Meta Graph API**     | Facebook & Instagram publishing |
-| **LinkedIn API**       | LinkedIn publishing             |
-| **Messenger Webhooks** | User interaction                |
-| **REST APIs**          | External service integrations   |
+| Technology         | Usage                                    |
+| ------------------ | ---------------------------------------- |
+| **n8n**            | Automation & orchestration               |
+| **OpenAI**         | AI reasoning, Whisper & image generation |
+| **Cloudinary**     | Image hosting & media management         |
+| **Google Drive**   | Asset storage                            |
+| **Google Sheets**  | Content database                         |
+| **Meta Graph API** | Facebook & Instagram                     |
+| **LinkedIn API**   | LinkedIn publishing                      |
 
 ---
 
 # 🧩 Architecture Philosophy
 
-The workflow follows a **modular, event-driven automation architecture**:
+The workflow is designed around a **modular automation architecture**.
+
+Each major responsibility is separated into its own logical layer:
 
 ```text
-INPUT
-  │
-  ▼
-UNDERSTAND
-  │
-  ▼
-GENERATE
-  │
-  ▼
-OPTIONAL ASSET CREATION
-  │
-  ▼
-STORE
-  │
-  ▼
-REVIEW
-  │
-  ├──────────────► REGENERATE
-  │
-  ▼
-APPROVE
-  │
-  ▼
-ROUTE
-  │
-  ▼
-PUBLISH
-  │
-  ▼
-LOG
+Input
+  ↓
+AI Processing
+  ↓
+Content Generation
+  ↓
+Media Management
+  ↓
+Human Approval
+  ↓
+Publishing
+  ↓
+Tracking
 ```
 
-Each stage is separated into logical components, allowing new capabilities to be added without rebuilding the entire workflow.
+This approach makes the system easier to:
 
-The architecture provides a foundation for future capabilities such as:
-
-* 🎥 AI video generation
-* 💬 Automated comment responses
-* 📅 Content scheduling
-* 📊 Analytics
-* 🌐 Additional social platforms
+* Maintain
+* Debug
+* Extend
+* Reuse
+* Customize for different clients
+* Add new platforms and AI capabilities
 
 ---
 
-# 📈 Project Highlights
+# ⭐ Project Highlights
 
-| Category             | Current Capability              |
-| -------------------- | ------------------------------- |
-| 🤖 **AI Automation** | End-to-end AI content pipeline  |
-| 🎤 **Input**         | Voice + Text                    |
-| ✍️ **Content**       | Flexible caption generation     |
-| 🎨 **Media**         | AI image generation             |
-| 👤 **Control**       | Human approval + regeneration   |
-| ☁️ **Storage**       | Google Drive                    |
-| 📊 **Tracking**      | Google Sheets                   |
-| 🚀 **Publishing**    | Facebook + Instagram + LinkedIn |
-| 🧩 **Architecture**  | Modular and extensible          |
-| 🔮 **Next Phase**    | Video + Engagement + Analytics  |
+| Highlight                 | Implementation  |
+| ------------------------- | --------------- |
+| AI Content Generation     | OpenAI          |
+| Voice-to-Text             | OpenAI Whisper  |
+| AI Visual Creation        | OpenAI Images   |
+| Media Infrastructure      | Cloudinary      |
+| Human Approval Loop       | n8n             |
+| Content Regeneration      | n8n + OpenAI    |
+| Multi-Platform Publishing | Meta + LinkedIn |
+| Content Tracking          | Google Sheets   |
+| File Management           | Google Drive    |
+| Automation Engine         | n8n             |
 
 ---
 
 # 📄 License
 
-This repository is intended for educational and portfolio purposes.
-
-Feel free to explore the workflow architecture and adapt it for your own automation projects.
+This project is provided for portfolio and educational purposes.
 
 ---
 
 # 👨‍💻 Author
 
-## Omar Ali Osman
+**Omar Ali Osman**
 
-**AI Automation Developer**
+AI Automation Developer
 
-I build intelligent AI automation systems using:
+Specializing in:
 
+* AI Automation
+* n8n Workflow Development
 * AI Agents
-* n8n
-* OpenAI APIs
 * API Integrations
-* Workflow Automation
-* Webhooks
+* RAG Systems
+* Social Media Automation
 
-### Connect with me
-
-**GitHub**
-
+**GitHub:**
 https://github.com/omar-n8n
 
-**LinkedIn**
-
+**LinkedIn:**
 https://www.linkedin.com/in/omar-ali-007000379/
 
 ---
 
-<div align="center">
+<p align="center">
 
 ### ⭐ If you found this project useful, consider giving it a Star!
 
-**Built with ❤️ using n8n & OpenAI**
+**Built with ❤️ using n8n, OpenAI & Cloudinary**
 
-</div>
+</p>
