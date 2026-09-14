@@ -19,14 +19,25 @@
 </p>
 
 ---
+# 📸 Workflow Screenshots
 
-## 📸 Workflow Preview
+## ⚙️ Generating Flow
 
-![Generating Flow](./Screenshots/Generating-Flow.jpeg)
+![Generating Flow](Screenshots/Generating-Flow.jpeg)
 
-![Regenerating Flow](./Screenshots/Regenerating-Flow.jpeg)
+---
 
-![Publishing Flow](./Screenshots/Publishing-Flow.jpeg)
+## 🔄 Regenerating Flow
+
+![Regenerating Flow](Screenshots/Regenerating-Flow.jpeg)
+
+---
+
+## 🚀 Publishing Flow
+
+![Publishing Flow](Screenshots/Publishing-Flow.jpeg)
+
+---
 
 ---
 
